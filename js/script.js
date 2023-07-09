@@ -71,9 +71,11 @@ let hadithResource = document.getElementById('hadith-resource');
 //   console.log(hadith[i]);
 // }
 
+let num = 0;
+
 function rotate() {
   let count = generateRandomNums();
-  console.log('id: >>>', hadith[count].id);
+  console.log(hadith[count].id);
 
   hadithAr.innerHTML = hadith[count].matnAr;
   hadithEn.innerText = hadith[count].matnEn;
@@ -82,18 +84,18 @@ function rotate() {
 
 function generateRandomNums() {
   let randomNum = Math.floor(Math.random() * hadith.length);
-  let currentNum = randomNum;
-
-  if (randomNum != currentNum) {
+  
+  if (randomNum != num) {
+    num = randomNum;
+    console.log('random num not repeated');
     return randomNum;
-  } else {
-    randomNum = Math.floor(Math.random() * hadith.length);
+  } else if (randomNum == num){
+    console.log('REPEATED BUT NP , i fix it');
+    randomNum = generateRandomNums();
+    return randomNum;
   }
 
-  console.log(randomNum);
-  console.log(currentNum);
-  return randomNum;
+  // console.log(randomNum);
+  // console.log(num);
 }
 
-let x = generateRandomNums();
-console.log(x);
