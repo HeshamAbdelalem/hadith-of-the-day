@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Belanosima:wght@400;700&display=swap');
+
+/* 
+  font-family: 'Aref Ruqaa', serif;
+    font-family: 'Belanosima', sans-serif;
+  */
+body {
+  transition: all 0.3s ease-in-out;
+}
+
+#hadith-matn-ar {
+  font-family: 'Aref Ruqaa', serif;
+}
+
+#hadith-matn-en {
+  font-family: 'Belanosima', sans-serif;
+}
+
+.container h1,
+.container h3 {
+  font-family: 'Belanosima', sans-serif;
+}
+
+.container h3 {
+  text-transform: capitalize;
+}
+
+#main-btn {
+  text-transform: capitalize;
+}

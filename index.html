@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Hadith App</title>
+  </head>
+  <body class="vh-100">
+    <div class="container d-flex flex-column align-items-center mt-4 pt-4">
+      <h1 class="p-4">Hadith Of The Day</h1>
+      <h3>press the button below to receive a random hadith</h3>
+      <button
+        onclick="rotate()"
+        id="main-btn"
+        class="btn m-4 px-4 py-2 bg-danger text-light"
+      >
+        new hadith
+      </button>
+      <h3 id="hadith-matn-ar" class="m-4 text-center"></h3>
+
+      <h3 id="hadith-matn-en" class="m-4 text-center"></h3>
+      <h5 id="hadith-resource" class="initialism"></h5>
+    </div>
+
+    <script src="js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
